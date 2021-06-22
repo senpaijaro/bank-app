@@ -4,12 +4,16 @@ import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 import SendIcon from '@material-ui/icons/Send';
 import HistoryIcon from '@material-ui/icons/History';
 import { useHistory } from 'react-router';
+import { MessageError } from '../components-util/Message'
 
 const BankCards = ({ user }) => {
 
   const history = useHistory()
 
   const navigateRoute = (route) => {
+    if(route === '/history') {
+      return MessageError('This is not avaible for now')
+    }
     history.replace(route)
   }
 
@@ -66,7 +70,7 @@ const BankCards = ({ user }) => {
 
                 <div className="card_category">HISTORY</div>
 
-                <button><HistoryIcon className="history-icon"/></button>
+                <button onClick={() => navigateRoute('/history')}><HistoryIcon className="history-icon"/></button>
               </div>
 
             </div>
