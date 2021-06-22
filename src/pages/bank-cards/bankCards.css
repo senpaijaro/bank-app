@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+
+.my-bank-home h1 {
+  text-transform: uppercase;
+}
+
+.card_top svg {
+  font-size: 7rem;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin: auto;
+}
+
+.card_top button {
+  background: none;
+  border: none;
+}
+.card_top button:hover {
+  color: #ffff;
+}
+
+.bank-cards:hover {
+  background: #fff;
+}
+
+
+.wrapper {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.cards_wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards_wrap .card_item {
+  margin: auto;
+  width: 20%;
+  padding: 10px;
+}
+
+.cards_wrap .card_inner {
+  background: #F7B219;
+  border-radius: 30px;
+}
+
+.cards_wrap .card_top {
+  padding-bottom: 0;
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+.cards_wrap .card_bottom .card_category {
+  text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+  .cards_wrap .card_item {
+    width: 33.3%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards_wrap .card_item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 528px) {
+  .cards_wrap .card_item {
+    width: 100%;
+  }
+}

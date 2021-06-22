@@ -1,0 +1,112 @@
+/* .home {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .home-title {
+  text-align: center;
+  color: #fff;
+}
+
+.home .home-content {
+  width: 50%;
+}
+
+.home h1 {
+  font-size: 5rem;
+  font-family: 'Staatliches', cursive;
+  color: #F7B219;
+}
+
+.home p {
+  margin-top: 20px !important;
+  font-size: 1.9rem;
+  margin: auto;
+  text-align: center;
+  width:70% ;
+}
+
+.home .home-btn {
+  margin-top: 20px !important;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  width: 45%;
+}
+
+.home .home-btn button {
+  background-color: #F7B219;
+  font-family: 'Stint Ultra Condensed', cursive;
+  padding: 15px 30px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+}
+
+@media (max-width: 978px) {
+  .home p {
+   display: none;
+  }
+} */
+
+.home .center{
+	position: absolute;
+	left: 50%;
+	top: 55%;
+	transform: translate(-50%, -50%);
+	font-family: sans-serif;
+	user-select: none;
+}
+
+.center h1{
+	color: white;
+	font-size: 70px;
+	width: 900px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.center p{
+	text-align: center;
+  color: #fff;
+}
+
+.center h2{
+	color: white;
+	font-size: 70px;
+	font-weight: bold;
+	margin-top: 10px;
+	width: 885px;
+	text-align: center;
+}
+.center .buttons{
+	margin: 35px 180px;
+}
+.buttons button{
+	height: 50px;
+	width: 150px;
+	font-size: 20px;
+	font-weight: 600;
+	background: #F7B219;
+	cursor: pointer;
+	border-radius: 25px;
+	transition: .4s;
+  border: none;
+}
+/* .buttons .started-btn {
+  display: flex;
+  justify-content: center;
+  margin-right: 70px;
+  margin-top: 20px;
+} */
+
+.buttons .btn2{
+	margin-left: 25px;
+}
+.buttons button:hover{
+	background: #fff;
+}

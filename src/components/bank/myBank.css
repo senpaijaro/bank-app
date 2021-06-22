@@ -1,0 +1,134 @@
+.my-bank-home {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.action {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 45vh;
+}
+
+.action-deposit, .action-history, .action-mybalance, .action-withdrawal, .action-sendmoney {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.action-deposit, .action-withdrawal, .action-sendmoney {
+  margin-top: 40px;
+  color: #fff;
+}
+
+.action-deposit p, .action-withdrawal p, .action-sendmoney p {
+  margin-bottom: 40px;
+  width: 40%;
+  margin: auto;
+}
+
+.action-deposit label, .action-withdrawal label, .action-sendmoney label {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+.action-deposit h1, .action-withdrawal h1, .action-sendmoney h1 {
+  font-size: 3.4rem;
+}
+
+.action-deposit .form-action, .action-withdrawal .form-action, .action-sendmoney .form-action {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
+}
+
+.action-deposit .form-action button, .action-withdrawal .form-action button, .action-sendmoney .form-action button{
+  margin-top: 20px !important;
+  width: 40%;
+  padding:10px 20px;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  background: #F7B219;
+  font-weight: bolder;
+}
+
+.action-deposit .form-action input, .action-withdrawal .form-action input, .action-sendmoney .form-action input{
+  margin-top: 20px !important;
+  padding:10px 20px;
+  margin: auto;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.action-deposit .action-mybalance label, .action-withdrawal .action-mybalance label {
+  font-size: 1.8rem;
+}
+
+.action-mybalance h1 {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.action-mybalance  {
+  margin: auto;
+  width: 35%;
+  background: #F7B219;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.action-mybalance h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.action-mybalance span {
+  font-size: 5rem;
+  font-weight: bolder;
+}
+
+.footer {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.action-deposit p {
+  width: 109%;
+  margin-top: 20px;
+  color: red;
+}
+
+.action-withdrawal p {
+  width: 115%;
+  margin-top: 20px;
+  color: red;
+}
+
+.action-sendmoney p {
+  width: 145%;
+  text-align: start;
+  color: red;
+  padding-top: 5px;
+}
+
+.action-sendmoney span {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  width: 145%;
+  text-align: start;
+  color: green;
+  padding-top: 5px;
+  font-weight: bolder;
+}
