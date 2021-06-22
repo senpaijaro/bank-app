@@ -28,11 +28,8 @@ const MyBank = ({ user, updateSendUserMoney, userLogout }) => {
             <div className="action">
               <BankBalance user={newUserBalance}/>
                 <Switch>
-                  <Route path="/deposit"
-                    render={(props) => {
-                      <Deposit {...props} user={user} getUpdateUserBalance={getUpdateUserBalance} /> 
-                    }}
-                  >
+                  <Route path="/deposit">
+                      <Deposit user={user} getUpdateUserBalance={getUpdateUserBalance} /> 
                   </Route>
 
                   <Route path="/withdrawal">
