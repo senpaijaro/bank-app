@@ -19,16 +19,20 @@ const MyBank = ({ user, updateSendUserMoney, userLogout }) => {
   }
   
   return (
-
+   
         <div className="my-bank">
           <HeaderBank user={user} userLogout={userLogout}/>
+          <Router>
           <BankCards user={user}/>
-
+          
             <div className="action">
               <BankBalance user={newUserBalance}/>
                 <Switch>
-                  <Route path="/deposit">
-                    <Deposit user={user} getUpdateUserBalance={getUpdateUserBalance} /> 
+                  <Route path="/deposit"
+                    render={(props) => {
+                      <Deposit {...props} user={user} getUpdateUserBalance={getUpdateUserBalance} /> 
+                    }}
+                  >
                   </Route>
 
                   <Route path="/withdrawal">
@@ -45,8 +49,9 @@ const MyBank = ({ user, updateSendUserMoney, userLogout }) => {
             <label>Did you know?</label>
             <p>That InBank purges your deposited money and does nothing else? Amazing right?</p>
           </div>
-
+          </Router>
         </div>
+
   )
 }
  

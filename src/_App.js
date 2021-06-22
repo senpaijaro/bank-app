@@ -1,18 +1,18 @@
 import './App.css';
-import { Switch, Route,  BrowserRouter as Router } from 'react-router-dom'
+import { Switch, Route,  BrowserRouter as Router, Redirect, useHistory } from 'react-router-dom'
 import HeaderMenu from './components/HeaderMenu/HeaderMenu';
 import SignUp from './components/sign-up/SignUp';
 import SignIn from './components/sign-in/SignIn';
 import Bank from './components/bank/Bank';
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import MyBank from './pages/my-bank/MyBank';
 import UsersTable from './pages/users-table/UsersTable';
 import Myprofile from './pages/my-profile/Myprofile';
 import { MessageError } from './components/components-util/Message';
 
 function App() {
-
+  const history = useHistory()
   const [users, setUsers ] = useState([
     {
       id: '1624371797876',
@@ -59,6 +59,13 @@ function App() {
     console.log(users[index])
     setUsers([...users])
   }
+
+  useEffect(() => {
+    console.log(Object.keys(user).length === 0)
+    if(Object.keys(user).length === 0) {
+      history.push('/login')
+    }
+  }, [history])
 
   return (
     <div className="App">

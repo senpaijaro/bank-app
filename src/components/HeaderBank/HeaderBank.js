@@ -1,8 +1,9 @@
 import './headerBank.css'
-import { useHistory } from 'react-router-dom'
-
+import { useHistory, Redirect } from 'react-router-dom'
+import { useState } from 'react'
 const HeaderBank = ({userLogout}) => {
   const history = useHistory()
+  const [redirect, setRedirect] = useState(true)
 
   const myBankBtn = () => {
     history.push('/my-bank')
@@ -17,11 +18,11 @@ const HeaderBank = ({userLogout}) => {
   }
 
   const logoutBtn = () => {
-    history.push("/login");
+    history.push('/login')
+    setRedirect(true)
   }
 
   return (
-    
     <div>
       <div className="bank-logo">
         <h1>BANK</h1>

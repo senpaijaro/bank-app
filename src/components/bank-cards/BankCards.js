@@ -10,7 +10,7 @@ const BankCards = ({ user }) => {
   const history = useHistory()
 
   const navigateRoute = (route) => {
-    history.push(route)
+    history.replace(route)
   }
 
   return (
